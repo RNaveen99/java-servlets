@@ -6,6 +6,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Practical 3</title>
         <%@include file="meta-data.jsp" %>
+        <%@include file = "practicalAuthentication.jsp"%>
     </head>
     <body>
         <%@include file="header.jsp" %>
@@ -34,6 +35,6 @@
         </div>
     </body>
     <script>
-            document.querySelector('a[href="practical3.jsp"').classList.toggle("active");
+            document.querySelector('a[href="practical?practicalNum=3"]').classList.toggle("active");
         </script>
 </html>

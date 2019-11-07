@@ -6,6 +6,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Practical 4</title>
         <%@include file="meta-data.jsp" %>
+        <%@include file = "practicalAuthentication.jsp"%>
     </head>
     <body>
         <%@page import="java.util.Calendar" %>
@@ -31,6 +32,6 @@
         </div>
     </body>
     <script>
-            document.querySelector('a[href="practical4.jsp"').classList.toggle("active");
+            document.querySelector('a[href="practical?practicalNum=4"]').classList.toggle("active");
         </script>
 </html>
