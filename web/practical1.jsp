@@ -12,11 +12,15 @@
         <div class="container">
             <br>
         <form method="get">
+            <input type="hidden" name="practicalNum" value="1">
             <label for="num">Enter number: </label>
             <input type="number" name="num" id="num" required>
             <button class="btn waves-effect waves-light" type="submit">Submit</button>
         </form>
-        <% if (request.getParameter("num") != null) {
+        <%
+//            String a = request.getQueryString();
+            
+            if (request.getParameter("num") != null) {
             int num = Integer.parseInt(request.getParameter("num"));
             pageContext.setAttribute("n", num);
         }%>

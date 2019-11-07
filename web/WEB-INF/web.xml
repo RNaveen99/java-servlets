@@ -16,21 +16,34 @@
         <servlet-name>SignUp</servlet-name>
         <servlet-class>SignUp</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Practical</servlet-name>
+        <servlet-class>Practical</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>SignIn</servlet-name>
-        <url-pattern>/SignIn</url-pattern><url-pattern>/signin</url-pattern>
+        <url-pattern>/SignIn</url-pattern>
+        <url-pattern>/signin</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>SignOut</servlet-name>
-        <url-pattern>/SignOut</url-pattern><url-pattern>/signout</url-pattern>
+        <url-pattern>/SignOut</url-pattern>
+        <url-pattern>/signout</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>HomePage</servlet-name>
-        <url-pattern>/HomePage</url-pattern><url-pattern>/homepage</url-pattern>
+        <url-pattern>/HomePage</url-pattern>
+        <url-pattern>/homepage</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>SignUp</servlet-name>
-        <url-pattern>/SignUp</url-pattern><url-pattern>/signup</url-pattern>
+        <url-pattern>/SignUp</url-pattern>
+        <url-pattern>/signup</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Practical</servlet-name>
+        <url-pattern>/Practical</url-pattern>
+        <url-pattern>/practical</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

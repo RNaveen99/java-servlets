@@ -7,6 +7,7 @@
         <%@include file="meta-data.jsp" %>
     </head>
     <body>
+        <%@include file="header.jsp" %>
         <div class="container">
             <div class="row">
                 <form action="signup" method="POST" class="col s8 card offset-s2">

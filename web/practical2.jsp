@@ -12,6 +12,7 @@
         <div class="container">
             <br>
             <form method="get">
+                <input type="hidden" name="practicalNum" value="2">
                 <label for="num1">Enter number 1: </label>
                 <input type="number" name="num1" id="num1" required>
                 <label for="num2">Enter number 2: </label>
@@ -47,13 +48,13 @@
                 }
             %>
             <c:choose>
-                <c:when test = "${param.operation.equals(\"add\")}">
+                <c:when test = "${param.operation == 'add'}">
                     <c:out value="${op1 + op2}"></c:out>
                 </c:when>
-                <c:when test = "${param.operation.equals(\"subtract\")}">
+                <c:when test = "${param.operation == 'subtract'}">
                     <c:out value="${op1 - op2}"></c:out>
                 </c:when>
-                <c:when test = "${param.operation.equals(\"multiply\")}">
+                <c:when test = "${param.operation == 'multiply'}">
                     <c:out value="${op1 * op2}"></c:out>
                 </c:when>
             </c:choose>

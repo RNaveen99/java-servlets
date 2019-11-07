@@ -12,6 +12,7 @@
         <div class="container">
             <br>
         <form method="get">
+            <input type="hidden" name="practicalNum" value="3">
             <label for="name">Enter Name: </label>
             <input type="text" name="name" id="name" required>
             
