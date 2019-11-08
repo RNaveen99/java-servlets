@@ -18,12 +18,16 @@ public class Practical extends HttpServlet {
 //            
 //        }
 //        response.sendRedirect("practical" + practicalNum + ".jsp");
-        final int practicalNum = Integer.parseInt(request.getParameter("practicalNum"));
+        final String practicalNum = request.getParameter("practicalNum");
         String uri = "practical" + practicalNum + ".jsp";
         request.getRequestDispatcher(uri).include(request, response);
     }
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        if (SessionManagement.ifNotSignIn(request, response)) return;
+        processRequest(request, response);
+    }
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         if (SessionManagement.ifNotSignIn(request, response)) return;
         processRequest(request, response);
     }

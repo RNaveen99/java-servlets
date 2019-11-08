@@ -28,6 +28,11 @@
         <li class="tab"><a href="practical?practicalNum=3">Practical 3</a></li>
         <li class="tab"><a href="practical?practicalNum=4">Practical 4</a></li>
         <li class="tab"><a href="practical?practicalNum=5">Practical 5</a></li>
+        <li class="tab"><a href="practical?practicalNum=6">Practical 6</a></li>
+        <li class="tab"><a href="practical?practicalNum=7">Practical 7</a></li>
+        <li class="tab"><a href="practical?practicalNum=8">Practical 8</a></li>
+        <li class="tab"><a href="practical?practicalNum=9">Practical 9</a></li>
+        <li class="tab"><a href="practical?practicalNum=10">Practical 10</a></li>
       </ul>
     </div>
   </nav>
